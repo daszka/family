@@ -17,3 +17,13 @@ function hideMessages()
 {
     document.getElementById("view-messages").style.display = "none";
 }
+
+function showList()
+{
+    document.getElementById("view-list").style.display = "block";
+}
+
+function hideList()
+{
+    document.getElementById("view-list").style.display = "none";
+}

@@ -23,7 +23,7 @@
             <div id='button_container'>
                 <button onclick="showBlog();">Blog</button>
                 <button onclick="showMessages();">Messages</button>
-                <button>List</button>
+                <button onclick="showList();">List</button>
                 <button>Map</button>
                 <button>Calendar</button>
                 <button>Gallery</button>
@@ -64,7 +64,7 @@
                 <div><img style="height:100px; width: 100px; " src="static/images/notes1.png" alt="Notes"><h1>New</h1></div>
                 <div><img style="height:100px; width: 100px; " src="static/images/book.webp" alt="Notes"><h1>All</h1></div>
             </div>
-            <div class="List">
+            <div onclick="showList();" class="List">
                 <div style="text-align: center;"><h1>To-Do</h1></div>
                 <div id="to-do_background">
                     <div class="icon1 todo-icons">
@@ -111,6 +111,11 @@
     <div id="view-messages" class="view">
         <p>messages</p>
         <button onclick="hideMessages();">close</button>
+    </div>
+
+    <div id="view-list" class="view">
+        <p>List</p>
+        <button onclick="hideList();">close</button>
     </div>
     
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
