@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Family</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/view-blog.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+</head>
+
+
+<body>
+    <div id="left">
+        <span class="avatar"></span>
+        <h1 id="x">Family</h1>
+        <div id="days_amount_container">
+            <span id="days_amount">X</span>
+            <span >-Days</span>
+        </div>
+            <div id='button_container'>
+                <button onclick="showBlog();">Blog</button>
+                <button onclick="showMessages();">Messages</button>
+                <button>List</button>
+                <button>Map</button>
+                <button>Calendar</button>
+                <button>Gallery</button>
+                <button>Budget</button>
+                <button>Menu</button>
+            </div>
+    </div>
+
+    <div id="right">
+        <div class="parent">
+            <div class="Gallery">
+                <div id="gallery_image"></div>
+                <h1>Gallery</h1>
+            </div>
+            <div onclick="showBlog();" class="Blog">
+                <h1>Blog</h1>
+                <div id="blog_image"></div>
+                <h2 style="margin-bottom: 5px;margin-top:15px">Las</h2>
+                <p style="margin-top:2px">Posralismy sie po jagodach hi-hi <br> Posralismy sie po jagodach hi-hi </p>
+            </div>
+            <div class="Map">
+                <div id="map_image">
+                    <div id="map"></div>
+                </div>
+                <h1>Map</h1>
+            </div>
+            <div onclick="showMessages();" class="Messages"> 
+                <h1>Messages</h1>
+                <div style="text-align: center;" id="message_avatar_background1">
+                    <div style="text-align: center;" id="message_avatar1"></div>  
+                </div>
+                <div style="text-align: center;" id="message_avatar_background2">
+                    <div style="text-align: center;" id="message_avatar2"></div>  
+                </div>
+            </div>
+            <div class="Menu"> 
+                <div><img style="height:100px; width: 100px; " src="static/images/star1.webp" alt="Star"><h1>Fav</h1></div>
+                <div><img style="height:100px; width: 100px; " src="static/images/notes1.png" alt="Notes"><h1>New</h1></div>
+                <div><img style="height:100px; width: 100px; " src="static/images/book.webp" alt="Notes"><h1>All</h1></div>
+            </div>
+            <div class="List">
+                <div style="text-align: center;"><h1>To-Do</h1></div>
+                <div id="to-do_background">
+                    <div class="icon1 todo-icons">
+                        <div></div>
+                        <h1>Gifts</h1>
+                    </div>
+                    <div class="icon2 todo-icons">
+                        <div></div>
+                        <h1>Laundry</h1>
+                    </div>
+                    <div class="icon3 todo-icons">
+                        <div></div>
+                        <h1>Schedule</h1>
+                    </div>
+                    <div class="icon4 todo-icons">
+                        <div></div>
+                        <h1>Food</h1>
+                    </div>
+                </div> 
+            </div>      
+            <div class="Settings">
+                <div class="settings_background"></div>
+                <h1>Settings</h1>
+            </div> 
+        </div> 
+        <!-- <span>money:</span><span id="money_amount">500pln</span>
+
+        <button onclick="document.getElementById('modal').style.display='block';"> przycisk</button>
+
+
+        <div id="modal">
+            <p>dimodaallog</p>
+            <button onclick="document.getElementById('modal').style.display='none';">close</button>
+        </div>
+        -->
+    </div>
+    
+    <div id="view-blog" class="view">
+        <p>blog</p>
+        <h1>huj</h1>
+        <button onclick="hideBlog();">close</button>
+    </div>
+
+    <div id="view-messages" class="view">
+        <p>messages</p>
+        <button onclick="hideMessages();">close</button>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="static/js/map.js"></script>
+    <script src="static/js/view-switch.js"></script>
+</body>
+
+
+</html>
