@@ -24,17 +24,18 @@
                 <button onclick="showBlog();">Blog</button>
                 <button onclick="showMessages();">Messages</button>
                 <button onclick="showList();">List</button>
-                <button>Map</button>
-                <button>Calendar</button>
-                <button>Gallery</button>
-                <button>Budget</button>
-                <button>Menu</button>
+                <button onclick="showMap();">Map</button>
+                <button onclick="showCalendar();">Calendar</button>
+                <button onclick="showGallery();">Gallery</button>
+                <button onclick="showBudget();">Budget</button>
+                <button onclick="showMenu();">Menu</button>
+                <button onclick="showSettings();">Settings</button>
             </div>
     </div>
 
     <div id="right">
         <div class="parent">
-            <div class="Gallery">
+            <div onclick="showGallery();" class="Gallery">
                 <div id="gallery_image"></div>
                 <h1>Gallery</h1>
             </div>
@@ -44,7 +45,7 @@
                 <h2 style="margin-bottom: 5px;margin-top:15px">Las</h2>
                 <p style="margin-top:2px">Posralismy sie po jagodach hi-hi <br> Posralismy sie po jagodach hi-hi </p>
             </div>
-            <div class="Map">
+            <div onclick="showMap();" class="Map">
                 <div id="map_image">
                     <div id="map"></div>
                 </div>
@@ -59,7 +60,7 @@
                     <div style="text-align: center;" id="message_avatar2"></div>  
                 </div>
             </div>
-            <div class="Menu"> 
+            <div onclick="showMenu();" class="Menu"> 
                 <div><img style="height:100px; width: 100px; " src="static/images/star1.webp" alt="Star"><h1>Fav</h1></div>
                 <div><img style="height:100px; width: 100px; " src="static/images/notes1.png" alt="Notes"><h1>New</h1></div>
                 <div><img style="height:100px; width: 100px; " src="static/images/book.webp" alt="Notes"><h1>All</h1></div>
@@ -85,7 +86,7 @@
                     </div>
                 </div> 
             </div>      
-            <div class="Settings">
+            <div onclick="showSettings();" class="Settings">
                 <div class="settings_background"></div>
                 <h1>Settings</h1>
             </div> 
@@ -116,6 +117,41 @@
     <div id="view-list" class="view">
         <p>List</p>
         <button onclick="hideList();">close</button>
+    </div>
+
+    <div id="view-map" class="view">
+        <p>Map</p>
+        <button onclick="hideMap();">close</button>
+    </div>
+
+    <div id="view-calendar" class="view">
+        <p>Calendar</p>
+        <h1>huj</h1>
+        <button onclick="hideCalendar();">close</button>
+    </div>
+
+    <div id="view-gallery" class="view">
+        <p>Gallery</p>
+        <h1>huj</h1>
+        <button onclick="hideGallery();">close</button>
+    </div>
+
+    <div id="view-budget" class="view">
+        <p>budget</p>
+        <h1>huj</h1>
+        <button onclick="hideBudget();">close</button>
+    </div>
+
+    <div id="view-menu" class="view">
+        <p>menu</p>
+        <h1>huj</h1>
+        <button onclick="hideMenu();">close</button>
+    </div>
+
+    <div id="view-settings" class="view">
+        <p>settings</p>
+        <h1>huj</h1>
+        <button onclick="hideSettings();">close</button>
     </div>
     
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
