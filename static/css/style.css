@@ -154,7 +154,7 @@ cursor: pointer;}
     margin: auto;
     margin-top: 30px;
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
-    url(../images/blog1.jpg);
+    url(../images/gallery.jpg);
     background-position: center;
     background-size: cover;
     height: 70%;
@@ -274,7 +274,12 @@ grid-row-gap: 0px;  }
     bottom: 0;
     left:320px;
     display: none;
-    background-color: white;
+    background-color: rgb(199, 120, 236);
     z-index: 10000;
+    
+}
+
+.view > h1
+{
     text-align: center;
 }

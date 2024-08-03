@@ -6,6 +6,7 @@
     <title>Family</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/view-blog.css">
+    <link rel="stylesheet" href="static/css/view-messages.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
@@ -61,8 +62,8 @@
                 </div>
             </div>
             <div onclick="showMenu();" class="Menu"> 
-                <div><img style="height:100px; width: 100px; " src="static/images/star1.webp" alt="Star"><h1>Fav</h1></div>
-                <div><img style="height:100px; width: 100px; " src="static/images/notes1.png" alt="Notes"><h1>New</h1></div>
+                <div><img style="height:100px; width: 100px; " src="static/images/star.webp" alt="Star"><h1>Fav</h1></div>
+                <div><img style="height:100px; width: 100px; " src="static/images/notes.png" alt="Notes"><h1>New</h1></div>
                 <div><img style="height:100px; width: 100px; " src="static/images/book.webp" alt="Notes"><h1>All</h1></div>
             </div>
             <div onclick="showList();" class="List">
@@ -110,8 +111,38 @@
     </div>
 
     <div id="view-messages" class="view">
-        <p>messages</p>
-        <button onclick="hideMessages();">close</button>
+        <h1>Messages</h1>
+        <button  id='button_close' onclick="hideMessages();"><img style="width: 30px;height: 30px;" src="static/images/close.png" /></button>
+
+        <div class="parent_messages">
+
+            <div class="left">
+                <div id="left_panel"> 
+                    <div class="left_chat">
+                        <div class="left_chat_img"><img class="left_chat_avatar" src="static/images/avatar.png" /></div>
+                        <div class="left_chat_text"><h1 style="left: 100px; margin-left: 5%;">Dasza</h1> </div>
+                    </div> 
+                    
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div id="right_panel">
+                    <div id="person_nick"><h1>Dasza</h1></div>
+                    <div id="panel_all">
+                        <div class="message_block"><p>xghhghghghjghjghghjghjghgD</p></div>
+                        <div class="message_block"><p>huj</p></div>
+                    </div>
+                    <div id="panel_messages"> 
+                        <input id="input_text_messages" type="text"> <button id="button_messages"  style="border-radius: var(--radius);"><img src="static/images/send.png"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        
+        
     </div>
 
     <div id="view-list" class="view">
